@@ -14,6 +14,23 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
     <style>
+        /* CSS RESET & BLOGGER COMPATIBILITY FIX */
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
+            top: 0 !important;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Menyembunyikan Navbar Iframe Bawaan Blogger secara permanen */
+        #navbar-iframe, .navbar-iframe, .b-navbar {
+            display: none !important;
+            height: 0 !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+        }
+
         :root {
             --primary-blue: #0d9488; /* Menggunakan Teal khas Kurikulum Merdeka */
             --secondary-gray: #64748b;
@@ -1113,7 +1130,7 @@
 
     <script>
         // CONFIG STICKER: Web App URL Google Apps Script
-        const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwtdEB4stE9g0X1USzGikxulCxgUaw2xHH5iGfgQ0NcDPxZvs7v1_SDW9Fnpgqy_y5Wgg/exec";
+        const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxgGXAQ9Qw5hISfLQ2adkfle0tFibhNugvSMOv8q4yU9tOOt0oQVFNNIHNJh5ZSY1CeOg/exec";
 
         // Local & Remote Synchronized State
         let appState = {
